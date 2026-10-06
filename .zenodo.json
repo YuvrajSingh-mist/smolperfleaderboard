@@ -3,7 +3,8 @@
   "description": "<p><strong>smolperfbenchmark</strong> is a reproducible local LLM benchmark and leaderboard for edge and consumer hardware.</p>\n<p>The smolperfbenchmark harness and tooling are licensed under Apache-2.0. Smolperfbenchmark results, published artifacts, generated charts and leaderboard data are licensed under CC BY 4.0.</p>",
   "creators": [
     {
-      "name": "Singh, Yuvraj"
+      "name": "Singh, Yuvraj",
+      "orcid": "0009-0005-4120-555X"
     }
   ],
   "license": "apache-2.0",
