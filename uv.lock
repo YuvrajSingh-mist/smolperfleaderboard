@@ -2694,7 +2694,7 @@ wheels = [
 ]
 
 [[package]]
-name = "smolperfbenchmark"
+name = "smolperfleaderboard"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [

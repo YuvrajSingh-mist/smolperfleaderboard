@@ -132,8 +132,8 @@ brew install ollama
 Clone **anywhere** — Desktop is not required:
 
 ```bash
-git clone https://github.com/YuvrajSingh-mist/smolperfbenchmark.git
-cd smolperfbenchmark
+git clone https://github.com/YuvrajSingh-mist/smolperfleaderboard.git
+cd smolperfleaderboard
 ```
 
 ### 5. Python env (`uv`)
@@ -187,7 +187,7 @@ The script auto-relaunches inside tmux. Attach with `tmux attach -t non-reasonin
 
 ```bash
 tmux new-session -d -s bench && \
-tmux send-keys -t bench "cd /path/to/smolperfbenchmark/benchmark-mac-mini-m4/non-reasoning-models && bash benchmark_non_reasoning.sh" Enter && \
+tmux send-keys -t bench "cd /path/to/smolperfleaderboard/benchmark-mac-mini-m4/non-reasoning-models && bash benchmark_non_reasoning.sh" Enter && \
 tmux attach -t bench
 ```
 

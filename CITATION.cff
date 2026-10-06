@@ -1,6 +1,6 @@
 cff-version: 1.2.0
-message: If you use smolperfbenchmark (the leaderboard, harness, or results), please cite it as below.
-title: "smolperfbenchmark: On-Device LLM Leaderboard"
+message: If you use smolperfleaderboard (the leaderboard, harness, or results), please cite it as below.
+title: "smolperfleaderboard: On-Device LLM Leaderboard"
 type: software
 authors:
   - family-names: Singh
@@ -8,16 +8,16 @@ authors:
     orcid: "https://orcid.org/0009-0005-4120-555X"
 date-released: "2026-01-01"
 year: 2026
-url: "https://github.com/YuvrajSingh-mist/smolperfbenchmark"
-repository-code: "https://github.com/YuvrajSingh-mist/smolperfbenchmark"
+url: "https://github.com/YuvrajSingh-mist/smolperfleaderboard"
+repository-code: "https://github.com/YuvrajSingh-mist/smolperfleaderboard"
 license: Apache-2.0
 doi: "10.5281/zenodo.23196839"
 preferred-citation:
   type: generic
-  title: "smolperfbenchmark: On-Device LLM Leaderboard"
+  title: "smolperfleaderboard: On-Device LLM Leaderboard"
   authors:
     - family-names: Singh
       given-names: Yuvraj
   year: 2026
-  url: "https://github.com/YuvrajSingh-mist/smolperfbenchmark"
-  howpublished: "\\url{https://github.com/YuvrajSingh-mist/smolperfbenchmark}"
+  url: "https://github.com/YuvrajSingh-mist/smolperfleaderboard"
+  howpublished: "\\url{https://github.com/YuvrajSingh-mist/smolperfleaderboard}"

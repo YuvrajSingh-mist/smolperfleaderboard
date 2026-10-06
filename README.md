@@ -1,4 +1,4 @@
-# smolperfbenchmark
+# smolperfleaderboard
 
 **A public on-device LLM benchmark leaderboard** for small open-weight models on consumer and edge hardware: NVIDIA Jetson Orin Nano Super, Raspberry Pi 5, Apple Silicon Macs, and Android phones.
 
@@ -12,7 +12,7 @@ Each device folder is self-contained with its own benchmark scripts, chart gener
 ## Repository Layout
 
 ```
-smolperfbenchmark/
+smolperfleaderboard/
 ├── README.md                                # this file
 ├── LICENSE                                  # Apache-2.0: code, scripts, tooling
 ├── LICENSE-DATASET                          # CC BY 4.0: results, artifacts, leaderboard data
@@ -82,8 +82,8 @@ Clone this repo to any directory. Python deps are installed with **uv** into `.v
 
 ```bash
 # uv: https://docs.astral.sh/uv/  (macOS: brew install uv)
-git clone https://github.com/YuvrajSingh-mist/smolperfbenchmark.git
-cd smolperfbenchmark
+git clone https://github.com/YuvrajSingh-mist/smolperfleaderboard.git
+cd smolperfleaderboard
 uv sync                         # aiperf 0.11.0 + hf + chart libs
 uv sync --extra mac             # Mac Mini only: also mlx-lm
 .venv/bin/aiperf --version      # must print 0.11.0
@@ -123,14 +123,14 @@ Academic paper citation is a community norm (use the BibTeX below); CC BY is wha
 
 ## Citation
 
-If you use smolperfbenchmark, the leaderboard, harness, or results, please credit this work and cite it as (also in [`CITATION.cff`](CITATION.cff)):
+If you use smolperfleaderboard, the leaderboard, harness, or results, please credit this work and cite it as (also in [`CITATION.cff`](CITATION.cff)):
 
 ```bibtex
-@misc{singh2026smolperfbenchmark,
-      title={smolperfbenchmark: On-Device LLM Leaderboard},
+@misc{singh2026smolperfleaderboard,
+      title={smolperfleaderboard: On-Device LLM Leaderboard},
       author={Yuvraj Singh},
       year={2026},
-      howpublished={\url{https://github.com/YuvrajSingh-mist/smolperfbenchmark}},
+      howpublished={\url{https://github.com/YuvrajSingh-mist/smolperfleaderboard}},
 }
 ```
 

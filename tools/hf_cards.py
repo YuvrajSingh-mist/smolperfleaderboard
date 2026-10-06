@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Keep Hugging Face dataset cards aligned with the repo's license policy.
 
-smolperfbenchmark is dual licensed:
+smolperfleaderboard is dual licensed:
 
   * code / harness (scripts, generators, device folders) -> Apache-2.0
   * results, artifacts, charts, leaderboard data         -> CC BY 4.0
@@ -34,18 +34,18 @@ from pathlib import Path
 
 LICENSE_ID = "cc-by-4.0"
 LICENSE_LINE_RE = re.compile(r"^license: ?.*$", flags=re.M)
-CITATION = """@misc{singh2026smolperfbenchmark,
-      title={smolperfbenchmark: On-Device LLM Leaderboard},
+CITATION = """@misc{singh2026smolperfleaderboard,
+      title={smolperfleaderboard: On-Device LLM Leaderboard},
       author={Yuvraj Singh},
       year={2026},
-      howpublished={\\url{https://github.com/YuvrajSingh-mist/smolperfbenchmark}},
+      howpublished={\\url{https://github.com/YuvrajSingh-mist/smolperfleaderboard}},
 }"""
 
 LICENSE_SECTION = f"""
 ## License & citation
 
 - **Benchmark results and artifacts** (aiperf exports, server logs, `tegrastats` logs, generated reports): [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Reuse and adaptation allowed, including commercially, provided you credit **Yuvraj Singh**, link the license, and indicate changes.
-- **Harness code** that produced these results: [Apache-2.0](https://github.com/YuvrajSingh-mist/smolperfbenchmark/blob/master/LICENSE).
+- **Harness code** that produced these results: [Apache-2.0](https://github.com/YuvrajSingh-mist/smolperfleaderboard/blob/master/LICENSE).
 
 If you use these results, please cite:
 

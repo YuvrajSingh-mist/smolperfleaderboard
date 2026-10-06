@@ -1,5 +1,5 @@
 [project]
-name = "smolperfbenchmark"
+name = "smolperfleaderboard"
 version = "0.1.0"
 description = "On-device LLM benchmark harness: aiperf load generator plus per-device scripts."
 readme = "README.md"
@@ -21,7 +21,7 @@ mac = [
 
 [project.urls]
 Homepage = "https://smolperfleaderboard.vercel.app/"
-Repository = "https://github.com/YuvrajSingh-mist/smolperfbenchmark"
+Repository = "https://github.com/YuvrajSingh-mist/smolperfleaderboard"
 
 [tool.uv]
 package = false

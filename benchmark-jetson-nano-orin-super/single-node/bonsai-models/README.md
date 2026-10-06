@@ -80,8 +80,8 @@ Do not `pip install aiperf` from PyPI (yanked stub). This folder runs on the Jet
 ### 1. Clone this benchmark repo
 
 ```bash
-git clone https://github.com/YuvrajSingh-mist/smolperfbenchmark.git
-cd smolperfbenchmark/benchmark-jetson-nano-orin-super/single-node
+git clone https://github.com/YuvrajSingh-mist/smolperfleaderboard.git
+cd smolperfleaderboard/benchmark-jetson-nano-orin-super/single-node
 ```
 
 ### 2. Install Bonsai-demo (models + deps)
@@ -217,7 +217,7 @@ Always run inside tmux when resuming so the session survives disconnects:
 
 ```bash
 tmux new-session -d -s bonsai-bench && \
-tmux send-keys -t bonsai-bench "cd /path/to/smolperfbenchmark/benchmark-jetson-nano-orin-super/single-node/bonsai-models && \
+tmux send-keys -t bonsai-bench "cd /path/to/smolperfleaderboard/benchmark-jetson-nano-orin-super/single-node/bonsai-models && \
 bash benchmark_all_bonsai.sh --resume artifacts/llamacpp/bonsai-llamacpp-YYYYMMDD-HHMM --power-mode 1 --reqs 20" Enter && \
 tmux attach -t bonsai-bench
 ```
