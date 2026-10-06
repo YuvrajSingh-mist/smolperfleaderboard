@@ -34,12 +34,19 @@ from pathlib import Path
 
 LICENSE_ID = "cc-by-4.0"
 LICENSE_LINE_RE = re.compile(r"^license: ?.*$", flags=re.M)
-CITATION = """@misc{singh2026smolperfleaderboard,
-      title={smolperfleaderboard: On-Device LLM Leaderboard},
-      author={Yuvraj Singh},
-      year={2026},
-      howpublished={\\url{https://github.com/YuvrajSingh-mist/smolperfleaderboard}},
-}"""
+
+# Concept DOI: always resolves to the newest archived release on Zenodo.
+DOI = "10.5281/zenodo.23196838"
+CITATION = f"""@software{{singh2026smolperfleaderboard,
+  title     = {{smolperfleaderboard: On-Device LLM Leaderboard}},
+  author    = {{Singh, Yuvraj}},
+  year      = {{2026}},
+  publisher = {{Zenodo}},
+  doi       = {{{DOI}}},
+  url       = {{https://github.com/YuvrajSingh-mist/smolperfleaderboard}}
+}}"""
+CITATION_BLOCK = f"```bibtex\n{CITATION}\n```"
+BIBTEX_BLOCK_RE = re.compile(r"```bibtex\n.*?\n```", flags=re.DOTALL)
 
 LICENSE_SECTION = f"""
 ## License & citation
@@ -65,11 +72,13 @@ def problems(text: str) -> list[str]:
         issues.append(f"license is '{match.group(0).split(':', 1)[1].strip()}', expected '{LICENSE_ID}'")
     if "## License & citation" not in text:
         issues.append("missing '## License & citation' section")
+    elif DOI not in text:
+        issues.append(f"citation block does not carry the Zenodo concept DOI ({DOI})")
     return issues
 
 
 def fix(text: str) -> str:
-    """Set the CC BY 4.0 front matter and append the license section if absent."""
+    """Set the CC BY 4.0 front matter and normalise the DOI citation block."""
     if LICENSE_LINE_RE.search(text):
         text = LICENSE_LINE_RE.sub(f"license: {LICENSE_ID}", text, count=1)
     else:
@@ -77,6 +86,11 @@ def fix(text: str) -> str:
         text = f"---\nlicense: {LICENSE_ID}\n---\n\n{text}"
     if "## License & citation" not in text:
         text = text.rstrip("\n") + "\n" + LICENSE_SECTION
+    elif BIBTEX_BLOCK_RE.search(text):
+        # Upgrade a stale citation block (e.g. one predating the Zenodo DOI).
+        text = BIBTEX_BLOCK_RE.sub(lambda _m: CITATION_BLOCK, text, count=1)
+    else:
+        text = text.rstrip("\n") + "\n\n" + CITATION_BLOCK + "\n"
     return text
 
 
@@ -131,7 +145,7 @@ def _run_sync_hf(repo_ids: list[str]) -> int:
             path_in_repo="README.md",
             repo_id=repo_id,
             repo_type="dataset",
-            commit_message=f"Set dataset card license to {LICENSE_ID} and add citation.",
+            commit_message=f"Set dataset card license to {LICENSE_ID} and cite the Zenodo DOI.",
         )
         info = api.dataset_info(repo_id)
         print(f"fixed {repo_id} -> license={(info.cardData or {}).get('license')}")
