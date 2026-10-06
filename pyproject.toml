@@ -20,7 +20,7 @@ mac = [
 ]
 
 [project.urls]
-Homepage = "https://smolperfbenchmark.vercel.app/"
+Homepage = "https://smolperfleaderboard.vercel.app/"
 Repository = "https://github.com/YuvrajSingh-mist/smolperfbenchmark"
 
 [tool.uv]

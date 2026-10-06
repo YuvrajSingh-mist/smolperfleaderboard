@@ -4,7 +4,7 @@
 
 Most LLM benchmarks assume a datacenter GPU with unlimited power and cooling. This one measures what hardware you already own can actually sustain under a locked power cap: **output tokens per joule (tok/J)**, throughput, TTFT, ITL, power, and thermals, with **llama.cpp vs Ollama** compared on the same GGUFs.
 
-- **Live leaderboard:** [smolperfbenchmark.vercel.app](https://smolperfbenchmark.vercel.app/)
+- **Live leaderboard:** [smolperfleaderboard.vercel.app](https://smolperfleaderboard.vercel.app/)
 - **Results on Hugging Face:** [huggingface.co/YuvrajSingh9886](https://huggingface.co/YuvrajSingh9886)
 
 Each device folder is self-contained with its own benchmark scripts, chart generators, and published reports. Results are generated, never hand-authored. The goal is to map out what actually runs well on the devices people already own.
@@ -70,7 +70,7 @@ smolperfbenchmark/
 
 Single-board Jetson MoE benchmarks (`single-node/mixture-of-experts/`) are planned but not yet implemented.
 
-Live leaderboard: https://smolperfbenchmark.vercel.app/ (edit/setup: private [`smolperfbenchmark-leaderboard`](https://github.com/YuvrajSingh-mist/smolperfbenchmark-leaderboard) README). The legacy `smolbenchmark.vercel.app` host permanently redirects here.
+Live leaderboard: https://smolperfleaderboard.vercel.app/ (edit/setup: private [`smolperfbenchmark-leaderboard`](https://github.com/YuvrajSingh-mist/smolperfbenchmark-leaderboard) README). The older `smolperfbenchmark.vercel.app` and `smolbenchmark.vercel.app` hosts permanently redirect here.
 
 ## Load generator
 
