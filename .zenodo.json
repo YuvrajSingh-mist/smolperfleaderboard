@@ -1,0 +1,45 @@
+{
+  "title": "smolperfbenchmark: On-Device LLM Leaderboard",
+  "description": "<p><strong>smolperfbenchmark</strong> is a reproducible local LLM benchmark and leaderboard for edge and consumer hardware.</p>\n<p>The smolperfbenchmark harness and tooling are licensed under Apache-2.0. Smolperfbenchmark results, published artifacts, generated charts and leaderboard data are licensed under CC BY 4.0.</p>",
+  "creators": [
+    {
+      "name": "Singh, Yuvraj"
+    }
+  ],
+  "license": "apache-2.0",
+  "upload_type": "software",
+  "access_right": "open",
+  "language": "eng",
+  "keywords": [
+    "local llm benchmark",
+    "llm leaderboard",
+    "jetson orin nano super",
+    "tok/J",
+    "edge ai",
+    "llama.cpp",
+    "ollama"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/YuvrajSingh-mist/smolperfbenchmark",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://yuvrajsingh.io/posts/jetson-nano-super-benchmark-non-reasoning/",
+      "relation": "isDocumentedBy",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://yuvrajsingh.io/posts/jetson-orin-nano-super-bonsai-benchmark/",
+      "relation": "isDocumentedBy",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://yuvrajsingh.io/posts/smolperfbenchmark-local-llm-leaderboard/",
+      "relation": "isDocumentedBy",
+      "scheme": "url"
+    }
+  ],
+  "notes": "Code is licensed under Apache-2.0. Smolperfbenchmark results, published artifacts, generated charts and leaderboard data are additionally licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)."
+}
