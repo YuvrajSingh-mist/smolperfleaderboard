@@ -126,11 +126,13 @@ Academic paper citation is a community norm (use the BibTeX below); CC BY is wha
 If you use smolperfleaderboard, the leaderboard, harness, or results, please credit this work and cite it as (also in [`CITATION.cff`](CITATION.cff)):
 
 ```bibtex
-@misc{singh2026smolperfleaderboard,
-      title={smolperfleaderboard: On-Device LLM Leaderboard},
-      author={Yuvraj Singh},
-      year={2026},
-      howpublished={\url{https://github.com/YuvrajSingh-mist/smolperfleaderboard}},
+@software{singh2026smolperfleaderboard,
+  title     = {smolperfleaderboard: On-Device LLM Leaderboard},
+  author    = {Singh, Yuvraj},
+  year      = {2026},
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.23196838},
+  url       = {https://github.com/YuvrajSingh-mist/smolperfleaderboard}
 }
 ```
 
