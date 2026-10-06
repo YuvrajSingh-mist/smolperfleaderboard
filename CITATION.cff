@@ -11,7 +11,7 @@ year: 2026
 url: "https://github.com/YuvrajSingh-mist/smolperfleaderboard"
 repository-code: "https://github.com/YuvrajSingh-mist/smolperfleaderboard"
 license: Apache-2.0
-doi: "10.5281/zenodo.23196839"
+doi: "10.5281/zenodo.23196838"
 preferred-citation:
   type: generic
   title: "smolperfleaderboard: On-Device LLM Leaderboard"
