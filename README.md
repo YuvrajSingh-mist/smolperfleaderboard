@@ -1,13 +1,18 @@
-# smolbenchmark
+# smolperfbenchmark
 
-A collection of reproducible, end-to-end benchmarks for running small open-weight AI models on consumer-grade local hardware (NVIDIA Jetsons, Apple Silicon Macs, Raspberry Pis, phones, tablets, and laptops).
+**A public on-device LLM benchmark leaderboard** for small open-weight models on consumer and edge hardware: NVIDIA Jetson Orin Nano Super, Raspberry Pi 5, Apple Silicon Macs, and Android phones.
 
-Each subfolder is self-contained with its own benchmark scripts, chart generators, and published reports. No platform assumptions; the goal is to map out what actually runs well on the devices people already own.
+Most LLM benchmarks assume a datacenter GPU with unlimited power and cooling. This one measures what hardware you already own can actually sustain under a locked power cap: **output tokens per joule (tok/J)**, throughput, TTFT, ITL, power, and thermals, with **llama.cpp vs Ollama** compared on the same GGUFs.
+
+- **Live leaderboard:** [smolperfbenchmark.vercel.app](https://smolperfbenchmark.vercel.app/)
+- **Results on Hugging Face:** [huggingface.co/YuvrajSingh9886](https://huggingface.co/YuvrajSingh9886)
+
+Each device folder is self-contained with its own benchmark scripts, chart generators, and published reports. Results are generated, never hand-authored. The goal is to map out what actually runs well on the devices people already own.
 
 ## Repository Layout
 
 ```
-smolbenchmark/
+smolperfbenchmark/
 ├── README.md                                # this file
 ├── LICENSE                                  # Apache-2.0: code, scripts, tooling
 ├── LICENSE-DATASET                          # CC BY 4.0: results, artifacts, leaderboard data

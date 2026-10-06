@@ -1,0 +1,11 @@
+# Vendored third-party source: excluded from GitHub language stats.
+#
+# benchmark-tablets/pipette-clients/ is a separately-cloned copy of an external
+# Liquid AI Rust/Kotlin/Swift workspace. It is tracked here for reproducibility,
+# but it is not smolperfbenchmark source, and without this rule GitHub reports
+# this repo's primary language as "Rust" (its 244 .rs / 373 .kt / 254 .swift
+# files dwarf the 12 .sh + 10 .py files that are actually this project).
+benchmark-tablets/pipette-clients/** linguist-vendored
+
+# Keep the vendored tree out of diffs/reviews in aggregate listings.
+benchmark-tablets/pipette-clients/** -diff

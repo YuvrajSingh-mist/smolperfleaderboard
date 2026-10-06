@@ -12,6 +12,10 @@ promo/
 # Local copy/sync noise
 .smol_copy_failures.log
 
+# Local-only agent/session notes (never published)
+AGENTS.md
+session-ses_*.md
+
 # Model weights
 *.gguf
 *.bin
