@@ -1,6 +1,12 @@
+<div align="center">
+
 # smolperfleaderboard
 
-**A public on-device LLM benchmark leaderboard** for small open-weight models on consumer and edge hardware: NVIDIA Jetson Orin Nano Super, Raspberry Pi 5, Apple Silicon Macs, and Android phones.
+**A public on-device LLM benchmark leaderboard for small open-weight models on consumer and edge hardware**
+
+[![license: Apache 2.0](https://img.shields.io/badge/license-Apache--2.0-blue)](LICENSE) [![dataset: CC BY 4.0](https://img.shields.io/badge/dataset-CC_BY_4.0-lightgrey)](LICENSE-DATASET) [![Sponsor: GitHub](https://img.shields.io/badge/Sponsor-GitHub-ea4aaa?logo=githubsponsors&logoColor=white)](https://github.com/sponsors/YuvrajSingh-mist) [![Buy me a coffee](https://img.shields.io/badge/Buy_me_a_coffee-FFDD00?logo=buymeacoffee&logoColor=black)](https://ko-fi.com/O7W120DR8R)
+
+</div>
 
 Most LLM benchmarks assume a datacenter GPU with unlimited power and cooling. This one measures what hardware you already own can actually sustain under a locked power cap: **output tokens per joule (tok/J)**, throughput, TTFT, ITL, power, and thermals, with **llama.cpp vs Ollama** compared on the same GGUFs.
 
@@ -138,6 +144,4 @@ If you use smolperfleaderboard, the leaderboard, harness, or results, please cre
 
 ## Fuel the benches
 
-Perf benchmarking burns wall-clock, watts, and a lot of coffee. If these numbers helped you pick a board or a model, fuel the next run:
-
-[![Support me on Ko-fi](https://storage.ko-fi.com/cdn/kofi2.png?v=3)](https://ko-fi.com/O7W120DR8R)
+Perf benchmarking burns wall-clock, watts, and a lot of coffee. If these numbers helped you pick a board or a model, fuel the next run: [GitHub Sponsors](https://github.com/sponsors/YuvrajSingh-mist) · [Ko-fi](https://ko-fi.com/O7W120DR8R).
